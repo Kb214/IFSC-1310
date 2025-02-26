@@ -1,5 +1,77 @@
 /* CSS Demo Stylesheet */
 
+html{
+    box-sizing: border-box;
+}
+
+
 body {
-    background-color: burlywood;
+    background-color: #FFF9E3;
+
+    font-family: "Arsenal SC", serif;
+    font-weight: 400;
+    font-style: normal;
+
+    margin: 0;
+}
+
+/*main {
+    width: 80vw;
+    max-width: 760px
+} */
+
+
+header.primary{
+    background: #332f23;
+    color: #FFF9E3;
+
+    text-align: center;
+    text-shadow: 1px 1px #000;
+
+    padding-top:40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+
+    /* TRBL 
+    padding: 20px 40px 20px 40px */
+
+    /*single value short hand
+    padding : 40px; */
+
+
+
+}
+
+header.pramary h1 {
+    font-size: 2.4rem;
+    /* top , LR, Bottom */
+    margin-top: 20px 0 0;
+}
+
+header.primary h1 a{
+    color:#FFF9E3;
+    text-decoration:none; 
+}
+
+header.primary h2{
+    letter-spacing: 2px;
+}
+
+/*nav.primary a{
+    
+}*/
+
+nav.primary ul{
+    padding: 0;
+
+}
+
+nav.primary ul li{
+    list-style-type:none;
+}
+
+/*nav that has primary class with a unorder list with a list and links */
+nav.primary ul li a{
+    color:#FFF9E3;
 }
