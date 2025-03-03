@@ -1,5 +1,7 @@
 /* CSS Demo Stylesheet */
 
+/*                Box sizing              */
+
 html {
     box-sizing: border-box;
   }
@@ -8,6 +10,19 @@ html {
   *:after {
     box-sizing: inherit;
   }
+
+
+/*                  UTILITY CLASSES                 */
+
+.containter{
+    /* Takes up 80% of page */
+    width: 90vw;
+    max-width: 960px;
+    /* To center a block on scree use margin spaced 40px on top and botton */
+    margin: 40px auto;
+}
+
+
 
 body {
     background-color: #FFF9E3;
@@ -55,7 +70,7 @@ header.primary{
 header.pramary h1 {
     font-size: 2.4rem;
     /* top , LR, Bottom */
-    margin-top: 20px 0 0;
+    margin: 20px 0 0;
 }
 
 header.primary h1 a{
@@ -64,15 +79,27 @@ header.primary h1 a{
 }
 
 header.primary h2{
+    font-size: 1.3rem;
+    margin:0;
     letter-spacing: 2px;
 }
 
-/*nav.primary a{
-    
-}*/
 
 nav.primary ul{
     padding: 0;
+
+    /* Makes the flex box for the unordered list*/
+    display:flex;
+
+    /* places the list in a way you want. */
+    flex-direction:row;
+
+    /* How element flow in flex box intems */
+    justify-content:space-around;
+
+    max-width: 960px;
+    margin: 20px auto;
+
 
 }
 
@@ -84,6 +111,53 @@ nav.primary ul li{
 
 nav.primary ul li a{
     color:#FFF9E3;
+    font-size: .9rem;
     text-decoration: none;
+    /* How thick , stroke */
+    border: 1px solid #FFF9E3;
+    padding: 6.4px 15px;
+    /* Need RGB for opacity last number is for opacity*/
+    background-color: rgba(0,0,0,.4);
+
+    /* To make Round corners. TL TR BL BR*/
+    border-radius:6px 14px 4px 76px;
+
+    /* hover opacity smoother instead of immediate. */
+    transition:.3s;
+
 }
 
+/* To make hover thing work*/
+nav.primary ul li a:hover{
+    background-color: rgba(0,0,0,.8);
+}
+
+/* Dont need to over quality because id is already unique */
+
+/*#content {}*/
+
+#content h2{
+    color: #25295E;
+    border-bottom: 1px solid;
+}
+
+#content h3{
+    color: #25295E;
+    border-left:  9px solid;
+    padding: 5px 0 5px 10px;
+
+}
+
+@media screen and (max-width:440px) {
+nav.primary ul{
+    flex-direction:column;
+    gap:10px;
+    max-width:200px;
+    margin:20px auto;
+}
+
+nav.primary ul a{
+    display:block;
+}
+
+}
