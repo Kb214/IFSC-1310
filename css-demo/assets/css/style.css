@@ -14,7 +14,7 @@ html {
 
 /*                  UTILITY CLASSES                 */
 
-.containter{
+.container{
     /* Takes up 80% of page */
     width: 90vw;
     max-width: 960px;
