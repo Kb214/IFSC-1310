@@ -22,6 +22,12 @@ html {
     margin: 40px auto;
 }
 
+/*                  RESPONSIVE IMGAGES                */
+
+img{
+    /* makes it not bigger than the parent*/
+    max-width:100%;
+}
 
 
 body {
@@ -148,6 +154,81 @@ nav.primary ul li a:hover{
 
 }
 
+#blog{
+
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    gap:20px;
+    border-top: 1px solid;
+    padding-top:40px;
+
+}
+
+#blog article.post{
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.6);
+    padding: 10px;
+    font-size:.8rem;
+    border-radius:4px;
+    transition:.3s;
+}
+
+#blog article.post:hover{
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.6);
+    
+}
+
+figure{
+    margin:0;
+}
+
+figcaption, time{
+    /* Makes every letter uppercase */
+    text-transform:uppercase;
+    font-size:.6rem;
+    text-align:center;
+    color: #c0c0c0;
+}
+
+#blog article.post a{
+    text-decoration:none;
+    
+}
+
+/* ARIA accessibility standard comments on elements role and overall content structure*/
+aside[role="complementary"]{
+    background-color: #332F2B;
+    color: #FFF9E3;
+    padding:40px 0;
+}
+
+aside .container{
+    display:flex;
+    flex-direction:row;
+    gap:40px;
+}
+
+/* color own line right align*/
+
+aside .container a:last-child{
+    color:#FFF9E3;
+    /* Makes inline act like a block*/
+    display:block;
+    text-align:right;
+}
+
+aside article footer{
+    display:none;
+}
+
+
+
+
+
+
+
+
+/* media query, asks if the max is 440px;  */
 @media screen and (max-width:440px) {
 nav.primary ul{
     flex-direction:column;
