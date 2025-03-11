@@ -14,6 +14,7 @@ html {
 
 /*                  UTILITY CLASSES                 */
 
+
 .container{
     /* Takes up 80% of page */
     width: 90vw;
@@ -22,7 +23,30 @@ html {
     margin: 40px auto;
 }
 
-/*                  RESPONSIVE IMGAGES                */
+.img-right {
+    float:right;
+    border: 3px solid;
+    padding:5px;
+    margin: 10px 0 10px 20px;
+    max-width:20vw;
+}
+
+.img-left {
+    float:left;
+    border: 3px solid;
+    padding:5px;
+    margin: 10px 20px 10px 0px;
+    max-width:20vw;
+}
+
+.img-center {
+    display:block;
+    margin: 10px auto;
+    border: 3px solid;
+    padding:5px;
+}
+
+/*                  RESPONSIVE IMAGES                */
 
 img{
     /* makes it not bigger than the parent*/
@@ -161,7 +185,8 @@ nav.primary ul li a:hover{
     justify-content:center;
     gap:20px;
     border-top: 1px solid;
-    padding-top:40px;
+    border-bottom: 1px solid;
+    padding:40px 0px;
 
 }
 
@@ -220,6 +245,69 @@ aside .container a:last-child{
 aside article footer{
     display:none;
 }
+
+
+#practice h2 {
+    color:#25295E;
+    border-bottom: 1px solid;
+}
+
+#practice a {
+    color:#25295E;
+    transition:.5s;
+}
+
+
+
+#practice a:hover{
+    color:#175515ff;
+    text-decoration:none;
+}
+
+
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    border: 2px solid #25295E;
+}
+
+caption{
+    font-weight: bold;
+    margin:10px;
+    font-size:1.5rem;
+}
+
+tr:nth-child(even){
+    background-color: rgba(37, 41, 94, 0.1);
+
+}
+
+tr:hover{
+    background-color:rgba(37, 41, 94,0.2);
+}
+
+th{
+    background-color: #332F2B;
+    color:#FFF9E3;
+    padding:7.5px;
+}
+
+td{
+    border: 2px solid #25295E;
+    padding:7px;
+
+}
+
+td:nth-child(n+2){
+    text-align:right;
+}
+
+
+
+
+
+
 
 
 
