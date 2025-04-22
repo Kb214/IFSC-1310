@@ -1,0 +1,139 @@
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+
+  .container{
+    /* Takes up 80% of page */
+    width: 90vw;
+    max-width: 960px;
+    /* To center a block on scree use margin spaced 40px on top and botton */
+    margin: 40px auto;
+}
+
+body{
+    background-color:white;
+    color:#292929;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal;
+    
+    margin: 0;
+}
+
+
+header.primary{
+    background: #333333;
+    color: lightgray;
+
+    text-align: center;
+    text-shadow: 4px 2px #000;
+
+    padding:40px;
+
+
+}
+
+header.primary h1 {
+    font-size: 3rem;
+    /* top , LR, Bottom */
+    margin: 20px 0 0;
+    border-bottom: 2px solid;
+    letter-spacing: 3px;
+    text-shadow: 5px 2px #644B00;
+}
+
+header.primary h1 a{
+    color:lightgray;
+    text-decoration: none;
+
+}
+
+header.primary h2{
+    font-size: 1.3rem;
+    margin:0;
+    letter-spacing: 7px;
+}
+
+nav.primary ul{
+    padding: 0;
+
+    /* Makes the flex box for the unordered list*/
+    display:flex;
+
+    /* places the list in a way you want. */
+    flex-direction:row;
+
+    /* How element flow in flex box intems */
+    justify-content:space-around;
+
+    max-width: 960px;
+    margin: 20px auto;
+
+
+}
+
+nav.primary ul li{
+    list-style-type:none;
+}
+
+
+header.primary ul li a {
+    color:lightgray;
+    font-size: .7rem;
+    text-decoration: none;
+    /* How thick , stroke */
+    border: 0.8px solid lightgray;
+    padding: 6.4px 20px;
+    /* Need RGB for opacity last number is for opacity*/
+    background-color: rgba(0, 0, 0, 0.7);
+
+    /* To make Round corners. TL TR BL BR*/
+    border-radius:9px 9px 9px 9px;
+
+    /* hover opacity smoother instead of immediate. */
+    transition:.2s;
+}
+
+nav.primary ul li a:hover{
+    background-color: rgba(96,71,0,.8);
+}
+
+/* #content h2{
+    border-bottom: 10px solid #644B00;
+    padding: 8px 0 5px 10px;
+} */
+
+#content h2, h3, h4{
+    border-bottom: 5px solid #A17800;
+    padding: 8px 0 5px 10px;
+}
+
+#content p{
+    padding:20px;
+}
+
+
+
+
+
+@media screen and (max-width:505px) {
+    nav.primary ul{
+        flex-direction:column;
+        gap:10px;
+        max-width:200px;
+        margin:20px auto;
+    }
+    
+    nav.primary ul a{
+        display:block;
+    }
+    
+     
+    }
