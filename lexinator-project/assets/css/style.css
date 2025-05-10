@@ -16,6 +16,8 @@ html {
     margin: 40px auto;
 }
 
+
+
 body{
     background-color:white;
     color:#292929;
@@ -30,11 +32,18 @@ body{
     margin: 0;
 }
 
-.lexinator-logo-left{
-    float:left;
-    margin: 90px 0 80px 0px;
-    max-width:20vw;
-    opacity:0.3;
+
+.lexinator-logo{
+    display:none;
+    position:absolute;
+    max-width:8vw;
+    align-items:start;
+    margin:0 auto;
+    padding:0 auto;
+
+    left:100px;
+    top:-40px;
+    
 }
 
 header.primary{
@@ -68,6 +77,12 @@ header.primary h2{
     font-size: 1.3rem;
     margin:0;
     letter-spacing: 7px;
+}
+
+.hgroup{
+    display:flex;
+    align-content:left;
+    gap:220px;
 }
 
 nav.primary ul{
@@ -175,7 +190,7 @@ aside article footer{
 
 
 
-@media screen and (max-width:505px) {
+@media screen and (max-width:800px) {
     nav.primary ul{
         flex-direction:column;
         gap:10px;
@@ -186,6 +201,25 @@ aside article footer{
     nav.primary ul a{
         display:block;
     }
+
+
+
+     .lexinator-logo{
+        display:none;
+    }
+
+    .hgroup{
+    display:block;
+    }
+
+    aside .container{
+    display:flex;
+    flex-direction:column;
+    gap:40px;
+    }
     
-     
+    img{
+        max-width:80vw;
+    }
+
     }
