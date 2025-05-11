@@ -212,14 +212,15 @@ aside article footer{
 }
 .learn li a:hover{
     color:#A17800;
+    transition:.3s;
 }
 
 .catchphrase{
     font-size:30px;
 }
 
-/*BEST CARS CSS*/
-#best-cars li{
+/*BEST WORST CARS CSS*/
+#best-worst-cars li{
     margin:30px;
     list-style-type: none;
     font-size:30px;
@@ -228,10 +229,36 @@ aside article footer{
     color: #A17800;
 }
 
-#best-cars p{
+#best-worst-cars p{
     padding:30px;
     text-align:center;
 }
+
+/*HISTORY*/
+.detail-history{
+    border: 2.1px solid;
+    font-size:20px;
+    text-align:center;
+    padding: 6.4px 60px;
+    background:#644B00;
+    border-radius:20px 0 20px 0;
+}
+.detail-history a{
+    text-decoration:none;
+    color: #292929;
+    border: 2.1px solid;
+    border-radius: 0 20px 0 20px;
+    padding: 6.4px 60px;
+    background:#A17800;
+
+}
+
+.detail-history a:hover{
+    color:lightgray;
+    transition:.2s;
+}
+
+
 
 @media screen and (max-width:1099px) {
     nav.primary ul{
