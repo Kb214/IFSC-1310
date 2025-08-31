@@ -11,16 +11,53 @@ html {
 
 
 body{
-    background-color:#445627;
-    color: #FFF2A0;
-    
+    background-color:#7EA1C4;
+    color: #1B365C; 
+}
+
+h1{
+  text-align: center;
+
+}
+
+ul{
+  list-style-type: none;
+  color:#0B1C34;
+  font-size: 16px;
+  text-align:center;
+  margin: 10px;
+}
+
+ul li.pl, .cv, .fp{
+  font-size: 20px;
+}
+
+ul li a{
+  color: #1B365C;
+  text-decoration: none;
+}
+
+ul li a:hover{
+  font-size: 18px;
+  color: white;
 }
 
 
+.reflections{
+  margin: 70px;
+  text-align: center;
+  border: 4.1px solid;
+  border-color: white;
+  background:#A6A6A6;
+}
 
+.reflections h2{
+  color:#0B1C34;
+}
 
-
-
+.reflections p{
+  margin: 10px;
+}
 
 
 
